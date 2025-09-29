@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+      const maxValue = 50;
+      function checkWeight() {
+        const weightInput = parseInt(document.getElementById('weight').value);
+        if (weightInput >= maxValue) {
+          alert("Over weight");
+        } else {
+          alert("Under weight");
+        }
+      }
+    </script>
+</head>
+<body>
+    <input type="text" id="weight" placeholder="Enter weight">
+    <button onclick="checkWeight()">Check Baggage</button>
+</body>
+</html>
